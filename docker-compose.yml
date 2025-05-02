@@ -13,6 +13,7 @@ services:
       - 3001:3000
     depends_on:
       - db
+    command: sh -c "npx prisma migrate dev --name init && npm run dev"
   db:
     image: postgres
     container_name: todo-db
