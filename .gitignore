@@ -2,6 +2,8 @@
 */dist
 */*-lock.json
 */*.env
+*/.vscode
 
 /backend/generated/
 /backend/prisma/migrations/
+/frontend/.angular/
