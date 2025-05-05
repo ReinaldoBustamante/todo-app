@@ -1,0 +1,24 @@
+<div class="todos">
+    
+    <div class="todo">
+        <div class="todo-text">
+            <div class="input-check"></div>
+            <p>Revisar correos</p>
+        </div>
+        <div class="todo-actions">
+            <p>p</p>
+            <p>d</p>
+        </div>
+    </div>
+
+    <div class="todo">
+        <div class="todo-text">
+            <div class="input-check" [ngClass]="{'complete': complete === true}">✓</div>
+            <p [ngClass]="{'complete': complete === true}">Revisar correos</p>
+        </div>
+        <div class="todo-actions">
+            <p>p</p>
+            <p>d</p>
+        </div>
+    </div>
+</div>

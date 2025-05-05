@@ -1,0 +1,24 @@
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    .title {
+        .date{
+            color: #718096;
+        }
+    }
+    .time{
+        padding: 24px 12px;
+        background: #ebf4ff; 
+        border: 1px solid #bee3f8;
+        border-radius: 12px;
+        color: #3182ce;
+        font-weight: bold;
+        font-size: 20px;
+    }
+}
