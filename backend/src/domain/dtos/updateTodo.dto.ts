@@ -2,14 +2,14 @@
 export class UpdateTodoDto {
     constructor(
         public title?: string,
-        public description?: string,
         public isCompleted?: boolean,
+        public isImportant?: boolean,
     ){}
 
     static create(object: {[key:string]: any}): [string?, UpdateTodoDto?]{
-        const {title, description, isCompleted} = object
+        const {title, isCompleted, isImportant} = object
         
-        return[undefined, new UpdateTodoDto(title, description, isCompleted)]     
+        return[undefined, new UpdateTodoDto(title, isCompleted, isImportant)]     
     }
     
 }
