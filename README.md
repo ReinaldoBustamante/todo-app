@@ -32,3 +32,22 @@ Este es una aplicacion de gestion de tareas desarrollado con angular, el cual po
 │           └── todos     # Componente que renderizan y gestionan el listado de tareas
 └── docker-compose.yml # Orquestador de los servicios del backend, app y base de datos
 ```
+
+## Instalacion y ejecucion
+
+1. Clonar el repositorio:
+    ```bash
+    git clone https://github.com/ReinaldoBustamante/todo-app.git
+    cd todo-app
+    ```
+
+2. Construir y levantar los contenedores con Docker:
+    ```
+    docker-compose up --build
+    ```
+
+3. Acceder a la apliacion:
+    ```
+    Frontend: http://localhost:4200/
+    Api: http://localhost:3000/api/todos/
+    ```   
