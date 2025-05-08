@@ -47,7 +47,6 @@ Este es una aplicacion de gestion de tareas desarrollado con angular, el cual po
     ```
 
 3. Acceder a la apliacion:
-    ```
-    Frontend: http://localhost:4200/
-    Api: http://localhost:3000/api/todos/
-    ```   
+    - **Frontend**: http://localhost:4200/
+    - **Api**: http://localhost:3000/api/todos/
+    
