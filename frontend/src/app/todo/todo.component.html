@@ -1,0 +1,26 @@
+<div class="todo" [ngClass]="{'important': isImportant}">
+    <div class="todo-text">
+        <div 
+            class="input-check" 
+            (click)="toggleStatus(id, !isCompleted)"
+            [ngClass]="{'complete': isCompleted}"
+            
+        >
+            <span *ngIf="isCompleted">✓</span>
+        </div>
+        <p
+            [ngClass]="{'complete': isCompleted}"
+        >
+            {{ title | titlecase }}
+        </p>
+    </div>
+    <div class="todo-actions">
+        <button (click)="toggleImportant(id, !isImportant)">
+            <mat-icon class="important" *ngIf="!isImportant">star_border</mat-icon>
+            <mat-icon class="important" *ngIf="isImportant">star</mat-icon>
+        </button>
+        <button (click)="deleteTodo(id)">
+            <mat-icon class="delete">delete</mat-icon>
+        </button>
+    </div>
+</div>

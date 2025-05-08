@@ -1,4 +1,8 @@
 <div class="add-todo">
-    <input type="text" placeholder="¿Què necesitas hacer hoy?">
-    <button>+</button>
+    <input 
+        type="text" 
+        placeholder="¿Què necesitas hacer hoy?"
+        [(ngModel)]="todoInput"
+    >
+    <button (click)="addTodo()">+</button>
 </div>

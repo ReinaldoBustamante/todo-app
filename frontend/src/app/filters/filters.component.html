@@ -1,8 +1,11 @@
 <div class="filters">
     <ul>
-        <li [ngClass]="{'active': true}">Todas</li>
-        <li>Pendientes</li>
-        <li>Completadas</li>
-        <li>Prioritarias</li>
+        <li 
+            *ngFor="let filter of filters"
+            (click)="changeFilter(filter)"
+            [ngClass]="{'active': filter === filterSelected}"
+        >
+            {{ filter }}
+        </li>
     </ul>
 </div>
