@@ -23,12 +23,12 @@ Este es una aplicacion de gestion de tareas desarrollado con angular, el cual po
 ├── frontend
 │   └──  src
 │        └── app 
-│            ├── add-todos # Dtos,
-│            ├── filters
-│            ├── headers
-│            ├── progress
-│            ├── services
-│            ├── todo
-│            └── todos
+│           ├── add-todos # Componente para añadir nuevas tareas
+│           ├── filters   # Componente para filtrar la lista de tareas
+│           ├── headers   # Componente del encabezado de la aplicación
+│           ├── progress  # Componente que muestran el progreso de tareas completadas
+│           ├── services  # Lógica y utilidades para comunicación con APIs
+│           ├── todo      # Componente que representan una tarea individual
+│           └── todos     # Componente que renderizan y gestionan el listado de tareas
 └── docker-compose.yml # Orquestador de los servicios del backend, app y base de datos
 ```
